@@ -18,9 +18,4 @@ public class RoleServiceImpl implements RoleService {
         return userDao.getRoleByName(roleName);
     }
 
-    @Override
-    @Transactional
-    public void createRole(Role role) {
-        userDao.createRole(role);
-    }
 }
